@@ -22,7 +22,7 @@ always@(binary_data)
         endcase
 	 end
 	 
-	endmodule
+endmodule
 	
 /*assign res = (data_kb == 8'h45)? 4'h0:
 				 (data_kb == 8'h16)? 4'h1:
