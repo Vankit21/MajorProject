@@ -2,18 +2,6 @@ module seven_segment_decoder(binary_data,seg);
 input [3:0] binary_data;
 output reg [6:0] seg;
 wire [3:0]res;
-/*assign res = (data_kb == 8'h45)? 4'h0:
-				 (data_kb == 8'h16)? 4'h1:
-				 (data_kb == 8'h1E)? 4'h2:
-				 (data_kb == 8'h26)? 4'h3:
-				 (data_kb == 8'h25)? 4'h4:
-				 (data_kb == 8'h2E)? 4'h5:
-				 (data_kb == 8'h36)? 4'h6:
-				 (data_kb == 8'h3D)? 4'h7:
-				 (data_kb == 8'h3E)? 4'h8:
-				 (data_kb == 8'h46)? 4'h9:
-				 (data_kb == 8'h79)? 4'hA:
-				 (data_kb == 8'h7B)? 4'hB:4'hC; */
 
 always@(binary_data)
     begin
@@ -36,3 +24,15 @@ always@(binary_data)
 	 
 	endmodule
 	
+/*assign res = (data_kb == 8'h45)? 4'h0:
+				 (data_kb == 8'h16)? 4'h1:
+				 (data_kb == 8'h1E)? 4'h2:
+				 (data_kb == 8'h26)? 4'h3:
+				 (data_kb == 8'h25)? 4'h4:
+				 (data_kb == 8'h2E)? 4'h5:
+				 (data_kb == 8'h36)? 4'h6:
+				 (data_kb == 8'h3D)? 4'h7:
+				 (data_kb == 8'h3E)? 4'h8:
+				 (data_kb == 8'h46)? 4'h9:
+				 (data_kb == 8'h79)? 4'hA:
+				 (data_kb == 8'h7B)? 4'hB:4'hC; */
