@@ -24,6 +24,8 @@ always@(binary_data)
 	 
 endmodule
 	
+
+    
 /*assign res = (data_kb == 8'h45)? 4'h0:
 				 (data_kb == 8'h16)? 4'h1:
 				 (data_kb == 8'h1E)? 4'h2:
