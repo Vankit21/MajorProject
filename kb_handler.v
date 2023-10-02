@@ -15,7 +15,6 @@ always @(posedge clk_50)
 
 assign kb_clk_delayed = clk_delayed[1];
 
-
 always @(posedge kb_clk_delayed, negedge rstn_mod) 
 	begin
 		if (!rstn_mod)
